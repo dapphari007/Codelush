@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    
+
+    .input-box input[type="password"] {
+      padding-right: 30px; /* Adjust for the button width */
+    }
+
+    .input-box .show-password-btn {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="container">
+    <form action="https://adminpanelcodelush.42web.io/login/submitreg.php" method="post" onsubmit="return validateForm()">
+      <h1>Registration</h1>
+
+      <div class="input-box">
+        <input type="text" name="first_name" placeholder="First Name" required />
+      </div>
+      
+      <div class="input-box">
+        <input type="text" name="last_name" placeholder="Last Name" required />
+      </div>
+
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      
+      <div class="input-box">
+        <input type="tel" name="phone_number" placeholder="Phone Number" required />
+      </div>
+
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" required />
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" id="password" placeholder="Password" required oninput="checkPassword()" onmouseover="showPasswordConditions()" onmouseout="hidePasswordConditions()" />
+        <button type="button" class="show-password-btn" onclick="togglePasswordVisibility()">Show</button>
+        <div id="password-conditions-box" class="password-conditions-box">
+          <h3>Password Conditions</h3>
+          <div id="password-conditions" style="font-size: 12px; color: #888;"></div>
+        </div>
+      </div>
+      <div class="input-box">
+        <input type="password" name="repeat_password" placeholder="Repeat Password" required />
+        <button type="button" class="show-password-btn" onclick="toggleRepeatPasswordVisibility()">Show</button>
+      </div>
+      
+      <div class="input-box">
+        <button type="submit" class="btn">Register</button>
+      </div>
+
+      <div class="login-link">
+        <center><p>Already registered? <a href="index.html">Login here!</a></p></center>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      var password = document.getElementsByName("password")[0].value;
+      var repeatPassword = document.getElementsByName("repeat_password")[0].value;
+      var username = document.getElementsByName("username")[0].value;
+
+      // Check if passwords match
+      if (password !== repeatPassword) {
+        alert("Password and Repeat Password do not match.");
+        return false;
+      }
+
+      // Check if username and password are the same
+      if (username === password) {
+        alert("Username and Password cannot be the same.");
+        return false;
+      }
+
+      // Check password complexity
+      var passwordComplexity = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[a-zA-Z0-9!@#$%^&*()_+]{8,}$/;
+      if (!passwordComplexity.test(password)) {
+        alert("Password must contain at least one uppercase letter, one special character, and be 8 characters long.");
+        return false;
+      }
+
+      return true;
+    }
+
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      var conditionsDiv = document.getElementById("password-conditions");
+      var conditionsText = "Password must contain:<br>";
+      conditionsText += "- At least one uppercase letter<br>";
+      conditionsText += "- At least one special character<br>";
+      conditionsText += "- Be 8 characters long";
+
+      conditionsDiv.innerHTML = conditionsText;
+    }
+
+    function showPasswordConditions() {
+      document.getElementById("password-conditions-box").style.display = "block";
+    }
+
+    function hidePasswordConditions() {
+      document.getElementById("password-conditions-box").style.display = "none";
+    }
+
+    function togglePasswordVisibility() {
+      var passwordField = document.getElementById("password");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+      } else {
+        passwordField.type = "password";
+      }
+    }
+
+    function toggleRepeatPasswordVisibility() {
+      var repeatPasswordField = document.getElementsByName("repeat_password")[0];
+      if (repeatPasswordField.type === "password") {
+        repeatPasswordField.type = "text";
+      } else {
+        repeatPasswordField.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>

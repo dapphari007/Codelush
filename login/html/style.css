@@ -1,0 +1,28 @@
+.task-container {
+    display: flex; /* Arrange tasks horizontally */
+    flex-wrap: wrap; /* Wrap tasks to multiple lines if needed */
+    gap: 20px; /* Add space between tasks */
+  }
+  
+  .task {
+    background-color: rgba(255, 255, 255, 0.8); /* Set transparent background */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 15px; /* Add padding for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  }
+  
+  .task h2, .task p {
+    margin: 0; /* Remove default margin for better spacing */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./1330653.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

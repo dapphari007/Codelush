@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Tasks</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="task-container">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Fetch tasks from get_tasks.php using JavaScript
+          fetch('get_tasks.php')
+            .then(response => response.json())
+            .then(tasks => {
+              const taskContainer = document.querySelector('.task-container');
+    
+              tasks.forEach(task => {
+                const taskDiv = document.createElement('div');
+                taskDiv.classList.add('task');
+    
+                const innerHTML = `
+                  <h2>${task.task_name}</h2>
+                  <p>${task.overview}</p>
+                `;
+    
+                taskDiv.innerHTML = innerHTML;
+                taskContainer.appendChild(taskDiv);
+              });
+            })
+            .catch(error => console.error('Error fetching tasks:', error));
+        });
+      </script>
+</body>
+</html>

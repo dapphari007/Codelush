@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dashstyle.css" />
+  <style>
+    /* Define styles for the empty area */
+    .empty-area {
+      margin-left: 200px; /* Adjust this based on your sidebar width */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Codelush</h1>
+  </div>
+
+  <div class="sidebar">
+    <h1 class="html/default.html">Dashboard</h1>
+    <center><button class="sidebar-link" onclick="openTaskWindow1()"><b>Manage task</b></button></center><br>
+    <a href="#" data-link="viewoffer.html">View Offer Letter</a>
+    <a href="#" data-link="allocated-tasks">Allocated Tasks</a>
+    <a href="#" data-link="task-submission">Task Submission</a>
+    <a href="#" data-link="internship-certificate">Internship Certificate</a>
+    <a href="#" data-link="lor-letter">LOR Letter</a>
+    <a href="#" data-link="swags-form">Swags Form</a>
+    <center><button class="sidebar-link" onclick="openTaskWindow()"><b>Profile ⚠️</b></button></center><br>
+  </div>
+
+  <section class="empty-area" id="empty-area">
+    <!-- Content will be loaded here -->
+  </section>
+
+  <!-- Add a button to view tasks -->
+  
+
+  <script>
+    // Function to load content from the clicked link
+    function loadContent(url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('empty-area').innerHTML = html;
+        });
+    }
+
+    // Function to open managetask.html in a new window
+    function openTaskWindow1() {
+      window.open('html/managetask.html', '_blank');
+    }
+
+    function openTaskWindow() {
+      window.open('html/profile.html', '_blank');
+    }
+
+    // Add click event listener to all sidebar links
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        const url = this.getAttribute('data-link');
+        loadContent(url);
+      });
+    });
+
+    // Load default content initially
+    loadContent('html/default.html');
+  </script>
+</body>
+</html>
