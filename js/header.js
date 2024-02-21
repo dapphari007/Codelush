@@ -77,7 +77,7 @@ document.write(`
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="project.html" class="nav-item nav-link">Projects</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <a href="http://adminpanelcodelush.42web.io/Dashboard/html/index.html" class="nav-item nav-link"><b>Intern</b>Login</a>
+                <a href="http://adminpanelcodelush.42web.io/Dashboard/html" class="nav-item nav-link"><b>Intern</b>Login</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
