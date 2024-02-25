@@ -10,7 +10,7 @@ document.write(`
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">Start Your Projects Towards Goals</h1>
-                                    <a href="project.html" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <a href="https://adminpanelcodelush.42web.io/Dashboard/html/login.html" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@ document.write(`
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">Limited Seats Only Available</h1>
-                                    <a href="login/index.html" class="btn btn-primary py-sm-3 px-sm-4">Apply Now !</a>
+                                    <a href="https://adminpanelcodelush.42web.io/Dashboard/html/login.html" class="btn btn-primary py-sm-3 px-sm-4">Apply Now !</a>
                                 </div>
                             </div>
                         </div>
