@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link rel="stylesheet" type="text/css" href="../css/defaultphp.css">
+</head>
+<body>
+
+<div class="content-glass">
+    <div class="section-container">
+        <div class="welcome-section">
+            <!-- User data will be dynamically added here -->
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="task-section">
+            <h2>Tasks to Complete</h2>
+            <ul>  
+                <li>Apply for an Internship</li>
+                <li>Get an offerletter from Codelush</li>
+                <li>Get Internship Batch</li>
+                <li>Task Allocation</li>
+                <li>Complete the Tasks</li>
+                <li>Submit Tasks</li>
+                <li>Project Submission Verified</li>    
+                <li>Get Internship Completion Certificate</li>
+                <li>Get LOR</li>
+                <li>Eligible for Swags</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fetch user data from fetch_user_data.php using AJAX
+        fetchUserData();
+
+        function fetchUserData() {
+            fetch('../php/default.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error('Error fetching user data:', data.error);
+                        return;
+                    }
+
+                    // Update DOM with user data
+                    updateUserData(data);
+                })
+                .catch(error => console.error('Error fetching user data:', error));
+        }
+
+        function updateUserData(data) {
+            const welcomeSection = document.querySelector('.welcome-section');
+            welcomeSection.innerHTML = `
+                <h2>Welcome ${data.user_name}🎉</h2>
+                <p>Intern ID - ${data.id}</p>
+                <p>Designation - ${data.designation}</p>
+                <p>Batch - MARCH 2024</p>
+                <p>To complete the internship you have to complete the following all tasks.</p>
+            `;
+        }
+    });
+</script>
+
+</body>
+</html>

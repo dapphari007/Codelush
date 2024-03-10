@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks Collection</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/htmlstyle.css" />
+  <style>
+    body{
+      background: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="../php/submittasksreg.php" method="post" onsubmit="return validateForm()">
+      <h1>Tasks Collection</h1>
+
+      <div class="input-box">
+        <input type="text" name="task1_link" placeholder="Task 1 Link" required />
+      </div>
+      
+      <div class="input-box">
+        <input type="text" name="task2_link" placeholder="Task 2 Link" required />
+      </div>
+
+      <div class="input-box">
+        <input type="text" name="task3_link" placeholder="Task 3 Link" required />
+      </div>
+      
+      <div class="input-box">
+        <input type="text" name="task4_link" placeholder="Task 4 Link" required />
+      </div>
+      
+      <div class="input-box">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      // You can add validation logic here if needed
+      return true;
+    }
+  </script>
+</body>
+</html>

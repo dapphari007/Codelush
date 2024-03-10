@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/1330653.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgba(51, 51, 51, 0); /* Transparent black */
+    padding: 20px;
+    color: #09ff00;
+    position: relative; /* Add position relative to the header */
+}
+
+
+
+
+.social-media {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; /* Adjust as needed */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.header h1 {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgba(51, 51, 51, 0); /* Transparent grey */
+    width: 200px;
+    padding: 20px;
+    backdrop-filter: blur(1px); /* Apply blur effect to create glass effect */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, .1); /* Change background color on hover */
+}
+
+.sidebar a:last-child {
+    margin-bottom: 0; /* Remove margin from the last child */
+}
+
+
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+#page-viewer {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+.footer {
+    background-color: rgba(51, 51, 51, 0); /* Transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}

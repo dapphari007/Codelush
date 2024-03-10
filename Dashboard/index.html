@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelush</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Codelush</h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com/codelush" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/Codelush" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/Codelush" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/codelush" class="social-icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="html/default.html" data-link="html/default.html"><h2>Dashboard</h2></a>
+            <a href="html/get_tasks.html" data-link="html/get_tasks.html">Manage Task</a>
+            <a href="https://internshipofferletter.tiiny.site/" data-link="https://internshipofferletter.tiiny.site/">View Offer Letter</a>
+            <a href="html/task-submission.html" data-link="html/task-submission.html">Task Submission</a>
+            <a href="https://www.canva.com/design/DAF8tE5H2cc/JB5ScWRscSCx_NOAaN8evQ/view?utm_content=DAF8tE5H2cc&utm_campaign=designshare&utm_medium=link&utm_source=editor" data-link="https://www.canva.com/design/DAF8tE5H2cc/JB5ScWRscSCx_NOAaN8evQ/view?utm_content=DAF8tE5H2cc&utm_campaign=designshare&utm_medium=link&utm_source=editor">Internship Certificate</a>
+            <a href="#" data-link="lor-letter">LOR Letter</a>
+            <a href="#" data-link="swags-form">Swags Form</a><br><br>
+            <a href="html/profile.html" data-link="../Dashboard/html/profile.html">Profile</a>
+        </div>
+        <div class="main-content">
+            <iframe src="html/default.html" frameborder="0" id="page-viewer"></iframe>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>hello</h4>
+    </footer>
+    <script>
+        const links = document.querySelectorAll('.sidebar a');
+        const pageViewer = document.getElementById('page-viewer');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const page = this.getAttribute('data-link');
+                pageViewer.src = page;
+                // Remove active class from all links
+                links.forEach(link => link.classList.remove('active'));
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
