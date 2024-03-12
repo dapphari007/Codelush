@@ -45,6 +45,8 @@ ADD COLUMN task1_link VARCHAR(700),
 ADD COLUMN task2_link VARCHAR(700),
 ADD COLUMN task3_link VARCHAR(700),
 ADD COLUMN task4_link VARCHAR(700);
+ALTER TABLE students ADD COLUMN position VARCHAR(255);
+
 
 
 INSERT INTO `tasks` (`id`, `task_name`, `overview`) VALUES
