@@ -14,7 +14,7 @@ document.write(`<!-- Team Start-->
                         <p class="text-primary">Founder & Landscape Designer</p>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100041863872504"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/HARISHk00759927"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/HARISHk00759927"><i class="fab fa-x-twitter"></i></a>
                             <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/dapphari007/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ document.write(`<!-- Team Start-->
                         <p class="text-primary">Garden Designer</p>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-x-twitter"></i></a>
                             <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/kalyanaperumal_c?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ document.write(`<!-- Team Start-->
                         <p class="text-primary">Technical Branch & Team Lead</p>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/venkatesan.hemanth"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-x-twitter"></i></a>
                             <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/_hkxzz_/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>

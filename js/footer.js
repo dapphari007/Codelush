@@ -9,7 +9,7 @@ document.write(`
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8072716876</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>codelush@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-x-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://facebook.com/codelush/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/channel/UCb3RCifPg-5GqB1-4gGWf8w"><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>

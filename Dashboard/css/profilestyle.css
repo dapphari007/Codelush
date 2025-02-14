@@ -5,14 +5,14 @@
     background-color: transparent !important;
 }
 
-/* Override color and hover styles for btn-twitter */
-.btn.btn-twitter {
+/* Override color and hover styles for btn-x-twitter */
+.btn.btn-x-twitter {
     background-color: #1da1f2; /* Your desired background color */
     border-color: #1da1f2; /* Your desired border color */
     color: #fff; /* Your desired text color */
 }
 
-.btn.btn-twitter:hover {
+.btn.btn-x-twitter:hover {
     background-color: #0d8bf9; /* Your desired hover background color */
     border-color: #0d8bf9; /* Your desired hover border color */
     color: #fff; /* Your desired hover text color */
