@@ -10,7 +10,7 @@ document.write(`<!-- Team Start-->
                 <div class="team-item rounded">
                     <img class="img-fluid" src="img/team-2.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Harish K</h4>
+                        <h4 class="mb-0">HARISH K</h4>
                         <p class="text-primary">Founder & Landscape Designer</p>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100041863872504"><i class="fab fa-facebook-f"></i></a>
@@ -24,7 +24,7 @@ document.write(`<!-- Team Start-->
                 <div class="team-item rounded">
                     <img class="img-fluid" src="img/team-2.jpg" alt="">
                     <div class="team-text">
-                        <h4 class="mb-0">Kalyana Perumal C</h4>
+                        <h4 class="mb-0">Sharmila D</h4>
                         <p class="text-primary">Garden Designer</p>
                         <div class="team-social d-flex">
                             <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
